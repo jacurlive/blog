@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    color: gray;
+    font-weight: 90;
+    font-size: 18px;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-user img{
+    border-radius: 100%;
+    border: 10px gray;
+    width: 100px;
+    height: 100px;
+}
