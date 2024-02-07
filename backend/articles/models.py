@@ -16,7 +16,6 @@ class About(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=255)
-    main_image = models.ImageField(upload_to='posts/', default=None, blank=True)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(max_length=255, unique=True)
