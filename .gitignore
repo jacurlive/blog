@@ -1,2 +1,7 @@
 backend/venv
 **/__pycache__
+
+# migrations 
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
