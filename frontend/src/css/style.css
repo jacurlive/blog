@@ -248,14 +248,14 @@ body ul a {
 
 .bottom_bd {
     padding: 40px;
-    width: 470px;
-    height: 200px;
-    margin: 50px auto 40px auto;
+    width: 350px;
+    height: 150px;
+    margin: 30px auto 40px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 80px 10px rgba(0, 0, 0, 0.2);
     position: fixed;
     bottom: 0px;
     left: 40px;
