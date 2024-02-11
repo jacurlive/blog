@@ -321,3 +321,16 @@ body ul a {
     transform: translateX(20px); 
 }
   
+.icon {
+    font-size: 18px;
+    color: black !important;
+    transition: transform 0.2s ease !important;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.insta {
+    margin-left: 20px;
+}
