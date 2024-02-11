@@ -1,8 +1,10 @@
-// 'use strict';
+'use strict';
 
-// let divElement = document.getElementById('box');
+document.addEventListener('DOMContentLoaded', function () {
+    const darkModeToggle = document.getElementById('darkModeToggle');
 
-// // Добавляем обработчик события клика
-// divElement.addEventListener('click', function() {
-//     window.location.href = 'https://youtu.be/QqxapsywS5E?feature=shared';
-// });
+    darkModeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        darkModeToggle.classList.toggle('dark-mode');
+    });
+});

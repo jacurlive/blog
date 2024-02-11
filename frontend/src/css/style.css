@@ -1,5 +1,20 @@
 body {
-    background-color: white;
+    background-color: #fff; /* Default light mode background */
+    color: inherit; /* Default light mode text color */
+}
+
+.dark-mode, .dark-mode h2, .dark-mode h3, .dark-mode p, .dark-mode .navbar, .dark-mode .navbar ul li a, .dark-mode ul li, .dark-mode ul li h5  {
+    background-color: #333 !important; /* Dark mode background */
+    color: #fff !important; /* Dark mode text color */
+    border-color: rgba( 225, 225, 225, 0.3) !important;
+}
+
+.dark-mode hr {
+    background-color: #fff;
+}
+
+.dark-mode .arrow{ 
+    filter: invert(100%); /* Dark mode text color */
 }
 
 .name h1 {
@@ -46,6 +61,10 @@ body {
 .navbar-nav {
     margin-left: auto;
     margin-right: 35%;
+}
+
+.nav-link {
+    transition: none !important;
 }
 
 .ab_me {
@@ -109,6 +128,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
+    color: black;
 }
 
 
@@ -150,7 +170,7 @@ body {
 
 .blog_li:hover p{
     transform: scale(1.001);
-    color: black;
+    color: inherit;
 }
 
 .blog_li:hover {
@@ -224,12 +244,15 @@ body ul a {
     padding: 40px;
     width: 470px;
     height: 200px;
-    margin: 50px auto 50px auto;
+    margin: 50px auto 40px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
 }
 
 .bottom_bd_h5 {
@@ -244,4 +267,42 @@ body ul a {
 
 .bottom_bd_p a {
     text-decoration: none;
+}
+
+.toggle-button {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    width: 50px;
+    height: 30px;
+    background-color: #999; /* Цвет фона кнопки в светлом режиме */
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .toggle-button {
+    background-color: #666 !important; /* Цвет фона кнопки в темном режиме */
+}
+
+.toggle-button:hover {
+    box-shadow: 0 0 10px 2px #999; /* Цвет фона кнопки при наведении */
+}
+
+.toggle-button:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.dark-mode:before {
+    transform: translateX(20px); /* Положение внутренней части в темном режиме */
 }
