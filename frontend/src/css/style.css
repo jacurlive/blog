@@ -80,10 +80,6 @@ body {
     margin-bottom: 25px;
 }
 
-.pr_no {
-    padding-left: 0;
-}
-
 .hr_short {
     margin: 20px 24.5% 0 16%;
     opacity: 0.1;
@@ -120,60 +116,51 @@ body {
 }
 
 .blog {
+    margin: 0 33% 0 33%;
+}
+
+.pr_no {
+    margin-left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .blog_li {
     list-style: none;
     border-top: 1px solid rgba(0,0,0,0.10);
     border-bottom: 1px solid rgba(0,0,0,0.10);
-    width: 798px;
-    height: 131px;
-    text-align: center;
+    width: 548px;
+    height: 91px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    transition: box-shadow 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
+    transition: box-shadow 0.3s ease;
     border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 20px;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
 }
+
 
 .blog_li div h5 {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.4px;
     color: rgba(0,0,0,0.35);
+    margin-bottom: 0;
     transition: transform 0.2s ease;
-    margin: 0;
 }
 
 .blog_li div p {
     font-size: 18px;
+    margin-bottom: 0;
     transition: 0.2s;
     line-height: 1.5;
     letter-spacing: 0.4px;
     transition: transform 0.2s ease;
-    margin-bottom: 15px;
-}
-
-.descr {
-    /* transform: translateY(50%); */
-    position: absolute;
-    top: 31%;
-    transition: transform 0.3s ease;
-}
-
-.strelka {
-    position: absolute;
-    bottom: 20px;
 }
 
 .arrow {
@@ -201,13 +188,7 @@ body {
 }
 
 .blog_li:hover {
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
-    transform: scale(1.10);
-    border-radius: 40px;
-}
-
-.blog_li:hover .descr {
-    transform: translateY(-28%);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .telega {
@@ -339,3 +320,4 @@ body ul a {
 .toggle-button.dark-mode:before {
     transform: translateX(20px); 
 }
+  
