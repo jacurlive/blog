@@ -1,11 +1,11 @@
 body {
-    background-color: #fff; /* Default light mode background */
-    color: inherit; /* Default light mode text color */
+    background-color: #fff; 
+    color: inherit; 
 }
 
 .dark-mode, .dark-mode h2, .dark-mode h3, .dark-mode p, .dark-mode .navbar, .dark-mode .navbar ul li a, .dark-mode ul li, .dark-mode ul li h5  {
-    background-color: #333 !important; /* Dark mode background */
-    color: #fff !important; /* Dark mode text color */
+    background-color: #333 !important; 
+    color: #fff !important; 
     border-color: rgba( 225, 225, 225, 0.3) !important;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .dark-mode .arrow{ 
-    filter: invert(100%); /* Dark mode text color */
+    filter: invert(100%); 
 }
 
 .name h1 {
@@ -80,6 +80,10 @@ body {
     margin-bottom: 25px;
 }
 
+.pr_no {
+    padding-left: 0;
+}
+
 .hr_short {
     margin: 20px 24.5% 0 16%;
     opacity: 0.1;
@@ -116,43 +120,60 @@ body {
 }
 
 .blog {
-    margin: 0 33% 0 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .blog_li {
     list-style: none;
     border-top: 1px solid rgba(0,0,0,0.10);
     border-bottom: 1px solid rgba(0,0,0,0.10);
-    width: 548px;
-    height: 91px;
+    width: 798px;
+    height: 131px;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-bottom: 20px;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 }
-
 
 .blog_li div h5 {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.4px;
     color: rgba(0,0,0,0.35);
-    margin-bottom: 0;
     transition: transform 0.2s ease;
+    margin: 0;
 }
 
 .blog_li div p {
     font-size: 18px;
-    margin-bottom: 0;
     transition: 0.2s;
     line-height: 1.5;
     letter-spacing: 0.4px;
     transition: transform 0.2s ease;
+    margin-bottom: 15px;
+}
+
+.descr {
+    /* transform: translateY(50%); */
+    position: absolute;
+    top: 31%;
+    transition: transform 0.3s ease;
+}
+
+.strelka {
+    position: absolute;
+    bottom: 20px;
 }
 
 .arrow {
@@ -180,7 +201,13 @@ body {
 }
 
 .blog_li:hover {
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.10);
+    border-radius: 40px;
+}
+
+.blog_li:hover .descr {
+    transform: translateY(-28%);
 }
 
 .telega {
@@ -281,7 +308,7 @@ body ul a {
     right: 50px;
     width: 50px;
     height: 30px;
-    background-color: #999; /* Цвет фона кнопки в светлом режиме */
+    background-color: #999; 
     border-radius: 15px;
     cursor: pointer;
     outline: none;
@@ -290,11 +317,11 @@ body ul a {
 }
 
 .dark-mode .toggle-button {
-    background-color: #666 !important; /* Цвет фона кнопки в темном режиме */
+    background-color: #666 !important; 
 }
 
 .toggle-button:hover {
-    box-shadow: 0 0 10px 2px #999; /* Цвет фона кнопки при наведении */
+    box-shadow: 0 0 10px 2px #999; 
 }
 
 .toggle-button:before {
@@ -310,5 +337,5 @@ body ul a {
 }
 
 .toggle-button.dark-mode:before {
-    transform: translateX(20px); /* Положение внутренней части в темном режиме */
+    transform: translateX(20px); 
 }
