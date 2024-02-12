@@ -443,7 +443,8 @@ body ul a {
     flex-direction: column;
     cursor: pointer;
     align-items: center;
-    border: 1px solid #444 !important;
+    border: none !important;
+    /* border: 1px solid #444 !important; */
     transition: transform 0.4s ease;
 }
 
@@ -464,6 +465,7 @@ body ul a {
     font-weight: 300;
     font-family: sans-serif;
     width: 100%;
-    border-top: 1px solid #444;
+    /* border-top: 1px solid #444; */
     text-transform: capitalize;
 }
+F
