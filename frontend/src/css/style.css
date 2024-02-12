@@ -323,18 +323,18 @@ body ul a {
   
 .icon {
     font-size: 18px !important;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     margin-top: 10px;
     margin-left: 10px;
     color: #000 !important;
-    transition: transform 0.2s ease !important;
+    transition: transform 0.2s ease, color 0.2s ease !important;
     z-index: 9999 !important;
     cursor: pointer;
 }
 
 .icon:hover {
-    transform: scale(1.2);
+    transform: scale(1.2);`
 }
 
 .insta {
