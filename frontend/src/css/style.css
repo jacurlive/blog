@@ -322,10 +322,15 @@ body ul a {
 }
   
 .icon {
-    font-size: 18px;
+    font-size: 18px !important;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
     color: #000 !important;
     transition: transform 0.2s ease !important;
     z-index: 9999 !important;
+    cursor: pointer;
 }
 
 .icon:hover {
