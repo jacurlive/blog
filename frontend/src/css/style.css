@@ -449,7 +449,7 @@ body ul a {
 }
 
 .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     box-shadow: 0 2px 5px 2px #999;
     
 }
@@ -470,4 +470,3 @@ body ul a {
     /* border-top: 1px solid #444; */
     text-transform: capitalize;
 }
-F
