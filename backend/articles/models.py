@@ -40,3 +40,7 @@ class Blog(models.Model):
 
         super().save(*args, **kwargs)
 
+
+class ImagePost(models.Model):
+    image = models.ImageField(upload_to="post/", default=None, blank=False)
+    content = models.TextField()
