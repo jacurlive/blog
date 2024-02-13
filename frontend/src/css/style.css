@@ -445,11 +445,13 @@ body ul a {
     align-items: center;
     border: none !important;
     /* border: 1px solid #444 !important; */
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: scale(1.03);
+    box-shadow: 0 2px 5px 2px #999;
+    
 }
 
 .card img {
