@@ -458,6 +458,7 @@ body ul a {
     width: 100%;
     height: 100%;
     border-radius: 2px;
+    object-fit: cover;
 }
 
 .card p {
