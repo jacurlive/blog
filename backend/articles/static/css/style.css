@@ -394,6 +394,7 @@ body ul a {
     overflow: auto;
     background-color: rgba(0,0,0,0.9);
     padding-top: 50px;
+    object-fit: cover;
 }
 
 .modal-content {
@@ -458,6 +459,7 @@ body ul a {
     width: 100%;
     height: 100%;
     border-radius: 2px;
+    object-fit: cover;
 }
 
 .card p {
