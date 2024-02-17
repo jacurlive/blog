@@ -6,9 +6,9 @@ backend/venv
 !**/migrations
 !**/migrations/__init__.py
 
-/backend/*.sqlite3
+**/*.sqlite3
 
-backend/media
+**/media
 
 # dependencies
 /node_modules
