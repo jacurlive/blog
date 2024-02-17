@@ -14,6 +14,12 @@ class MainView(ListView):
         context['images'] = ImagePost.objects.all()
 
         return context
+    
+
+class AboutView(ListView):
+    queryset = About.objects.first()
+    template_name = "blog/aboutme.html"
+    context_object_name = "about"
 
 
 class BlogView(ListView):
@@ -23,7 +29,7 @@ class BlogView(ListView):
     def get_context_data(self, **kwargs: Any):
         context = super().get_context_data(**kwargs)
         context["about"] = About.objects.first()
-        context["articles"] = Blog.objects.all()
+        context["articles"] = Blog.objects.order_by("-created_at")
 
         return context
     

@@ -51,7 +51,7 @@
     </nav>
 
 </section>
-  
+
 <h1 class="ab_me">blog</h1>
 
   <section class="blog">
@@ -60,7 +60,7 @@
         <div>
             <ul class="pr_no">
                 {% for article in articles %}
-                    <a href="{% url 'post' slug=articles.slug %}">
+                    <a href="{% url 'post' slug=article.slug %}">
                         <li class="blog_li">
                             <div class="descr">
                                 <h5>{{ article.created_at|date:"F j, Y" }}</h5>
