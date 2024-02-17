@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.jacur.uz",
+    "http://*.jacur.uz",
+]
 
 # Application definition
 
